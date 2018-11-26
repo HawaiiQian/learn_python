@@ -82,3 +82,23 @@ spam='My name is LiLei'.split()
 print(spam)
 spam='XX+XXX+XXXX'.split('+')
 print(spam)
+
+print('-------------------------------')
+
+spam='Hello'.rjust(10,'+')
+print(spam)
+spam='Hello'.ljust(20,'-')
+print(spam)
+spam='Hello'.center(10,'=')
+print(spam)
+
+print('-------------------------------')
+
+def printPicnic(itemsDict, leftWidth, rightWidth):
+    print('PICNIC ITEMS'.center(leftWidth + rightWidth, '-'))
+    for k,v in itemsDict.items():
+        print(k+str(v))
+things={'apple':5,'banner':20,'oranger':10}
+print(printPicnic(things,10,20))
+
+
