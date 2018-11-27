@@ -101,4 +101,18 @@ def printPicnic(itemsDict, leftWidth, rightWidth):
 things={'apple':5,'banner':20,'oranger':10}
 print(printPicnic(things,10,20))
 
+print('-------------------------------')
+'''
+left=10
+right=20
+print('PICNIC ITEMS'.center(left+right,'-'))
+print(len('PICNIC ITEMS'.center(left+right,'-')))
 
+'''
+
+things={'apple':5,'banner':20,'oranger':10}
+
+def pp(itemsDict,left,right):
+    for k,v in itemsDict.items():
+        print(k.ljust(left,'*')+str(v).rjust(right,'-'))
+pp(things,10,20)
